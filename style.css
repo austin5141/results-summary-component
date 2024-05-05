@@ -10,6 +10,13 @@ body {
     font-family:"Hanken Grotesk", sans-serif;
 }
 
+.sr-only{
+    position:absolute;
+    overflow:hidden;
+    top:-100px;
+    left:-100px;
+}
+
 .box {
     display:flex;
     align-items:center;
