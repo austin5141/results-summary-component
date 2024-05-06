@@ -35,10 +35,15 @@ body {
     background:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius:30px;
     width:450px;
+    position:relative;
+    left:20px;
 }
 
 .summary {
     padding-right:20px;
+    width:450px;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
 }
 
 #resultsHeading, #resultsGoal, #content {
@@ -85,9 +90,39 @@ body {
     color: hsl(224, 30%, 27%);
 }
 
-.summaryContent {
+.summaryContent:nth-of-type(1) {
     display:flex;
-    background-color:hsl(221, 100%, 96%);
+    background-color:hsla(0, 100%, 67%, 0.2);
+    padding:10px;
+    width:300px;
+    border-radius: 10px;
+    margin-top:25px;
+    margin-left:35px;
+}
+
+.summaryContent:nth-of-type(2) {
+    display:flex;
+    background-color:hsl(39, 100%, 56%, 0.2);
+    padding:10px;
+    width:300px;
+    border-radius: 10px;
+    margin-top:25px;
+    margin-left:35px;
+}
+
+.summaryContent:nth-of-type(3) {
+    display:flex;
+    background-color:hsl(166, 100%, 37%, 0.2);
+    padding:10px;
+    width:300px;
+    border-radius: 10px;
+    margin-top:25px;
+    margin-left:35px;
+}
+
+.summaryContent:nth-of-type(4) {
+    display:flex;
+    background-color:hsl(234, 85%, 45%, 0.2);
     padding:10px;
     width:300px;
     border-radius: 10px;
@@ -146,5 +181,12 @@ body {
     .box {
         flex-direction:column;
         margin:0;
+    }
+    .results {
+        position:static;
+        border-radius:0px 0px 30px 30px;
+    }
+    .summary {
+        border-radius:30px;
     }
 }
